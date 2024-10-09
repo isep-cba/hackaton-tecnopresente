@@ -10,22 +10,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container-fluid" id="contador" style="height: 500px;">
-        <h1><span class="antonio">HACKATÓN</span></h1>
+    <div id="contador" style="
+    height: 500px; 
+    width: 100%; 
+    background-image: url(img/bg-claro.jpg);
+    background-position: center; 
+    background-size: cover; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    padding: 3em;
+    text-align: center;
+    font-family: Be Vietnam Pro, system-ui;
+    font-weight: 600;
+    font-size: 1.2em;">
+        <img src="img/logo-hack.png" style="height: 120px;" alt="">
         <h3 style="margin-top: 5px;">de proyectos TecnoPresente en línea</h3>
-        <p>Mesas de exposición proyectos con herramientas digitales realizados por estudiantes, charlas con especialistas, vivos con influencers y propuestas lúdicas para recorrer.</p>          
-        <h3>Faltan </h3>
-        <h2 id="demo"></h2>
+        <p>Mesas de exposición proyectos con herramientas digitales realizados por estudiantes, charlas con especialistas, vivos con influencers y propuestas lúdicas para recorrer.</p>
+        <h2 id="demo" style="background-color: #FFFFFF77; padding: 20px; border-radius: 10px; font-size: 1.5em; font-weight: 600;;"></h2>
 <!--         <a type="button" class="btn btn-danger btn-lg" href="#">Web del evento</a>
  -->    
     </div>
-    <script src="scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+        // Set the date we're counting down to
+var countDownDate = new Date("Oct 18, 2024 11:00:00").getTime();
 
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = "Faltan " + days + " días " + hours + " hs "
+  + minutes + " min " + seconds + " seg ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EL EVENTO YA COMENZÓ";
+  }
+}, 1000);
+
+    </script>
 </body>
 </html>
