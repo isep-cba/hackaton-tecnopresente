@@ -29,7 +29,7 @@
     font-family: Be Vietnam Pro, system-ui;
     font-weight: 600;
     font-size: 1.2em;">
-        <img src="img/logo-hack.png" style="height: 120px; margin-bottom: 0px;" alt="">
+        <img src="img/logo-hack.png" class="glitch" style="height: 120px; margin-bottom: 0px;" alt="">
         <h3 style="margin-top: -15px;">de proyectos TecnoPresente en línea</h3>
         <p style="max-width: 480px">Mesas de exposición de proyectos con herramientas digitales realizados por estudiantes, charlas con especialistas, vivos con influencers y propuestas lúdicas para recorrer.</p>
         <h2 id="demo" style="background-color: #FFFFFF77; padding: 20px; border-radius: 10px; font-size: 1.5em; font-weight: 600;;"></h2>
@@ -68,10 +68,34 @@ document.getElementById("demo").innerHTML = "EL EVENTO YA COMENZÓ";
 </script>    
     </div>
 
+<script src="powerglitch.min.js"></script>
+<script>
+    PowerGlitch.glitch(
+    '.glitch',
+   
+)
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
+PowerGlitch.glitch(
+    '.glitch',
+    {
+  "timing": {
+    "duration": 3950
+  },
+  "shake": {
+    "velocity": 6,
+    "amplitudeX": 0,
+    "amplitudeY": 0.08
+  },
+  "slice": {
+    "count": 4,
+    "minHeight": 0.11,
+    "maxHeight": 0.23
+  },
+  "pulse": {
+    "scale": 1
+  }
+}
+)
+</script>
 </body>
 </html>
