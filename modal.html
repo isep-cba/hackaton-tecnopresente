@@ -33,8 +33,8 @@
         <h3 style="margin-top: -15px;">de proyectos TecnoPresente en línea</h3>
         <p style="max-width: 480px">Mesas de exposición de proyectos con herramientas digitales realizados por estudiantes, charlas con especialistas, vivos con influencers y propuestas lúdicas para recorrer.</p>
         <h2 id="demo" style="background-color: #FFFFFF77; padding: 20px; border-radius: 10px; font-size: 1.5em; font-weight: 600;;"></h2>
-<!--         <a type="button" class="btn btn-danger btn-lg" href="#">Web del evento</a>
- -->
+        <a type="button" class="btn btn-success btn-lg" href="https://sites.google.com/view/hackaton-tecnopresenteenlinea/inicio">Acceso al evento</a>
+
  <script>
     // Set the date we're counting down to
 var countDownDate = new Date("Oct 18, 2024 11:00:00").getTime();
@@ -55,13 +55,13 @@ var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 // Display the result in the element with id="demo"
-document.getElementById("demo").innerHTML = "Faltan " + days + " días " + hours + " hs "
+document.getElementById("demo").innerHTML = "Falta " + days + " día " + hours + " hs "
 + minutes + " min " + seconds + " seg ";
 
 // If the count down is finished, write some text
 if (distance < 0) {
 clearInterval(x);
-document.getElementById("demo").innerHTML = "EL EVENTO YA COMENZÓ";
+document.getElementById("demo").innerHTML = " ";
 }
 }, 1000);
 
