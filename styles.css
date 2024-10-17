@@ -1,43 +1,62 @@
 
   
+  
   #contador {
-    background-image: url(img/bg-modal2.jpg);
-    background-position: center;
-    background-size: cover;
-    /* box-shadow: inset 0 0 0 1000px rgba(55,110,145,.85); */
-    max-height: 90vh;
-    display: flex;
+    font-size: 1.2em;
+    height: 100%; 
+    width: 100%; 
+    background-image: url(img/bg-claro.jpg);
+    background-position: center; 
+    background-size: cover; 
+    display: flex; 
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
-    padding: 3em;
+    color: black;
+    padding: 3em 5em;
     text-align: center;
+    font-family: Be Vietnam Pro, system-ui;
+    font-weight: 600;
   }
 
-  /*
-  p, h1, h2, h3, a {
-    filter: drop-shadow(15px 15px 10px black);
+  img {
+    height: 120px; 
+    margin-bottom: 0px;
   }
-    */
-  
-  .antonio {
-    font-family: "Antonio", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 2em;
 
-  }
-  
-  
-  .container-fluid {
-    font-family: "Be Vietnam Pro", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
   #demo {
-    margin-top: 0px;
-    margin-bottom: 1em;
+    background-color: #FFFFFF77; 
+    padding: 20px; 
+    border-radius: 10px; 
+    font-size: 1.5em; 
+    font-weight: 600;
   }
+
+  @media screen and (max-width: 500px) {
+    #contador {
+      font-size: 0.9em;
+    }
+
+    #contador h3 {
+      font-size: 1.4em;
+    }
+
+    #contador #demo {
+      padding: 10px; 
+      border-radius: 10px; 
+      font-size: 1.2em; 
+      font-weight: 600;
+      margin-top: 0px;
+    }
+
+    #contador .btn {
+      font-size: 1.2em; 
+      margin-top: 0px;
+    }
+
+    #contador img {
+      height: 80px;
+    }
+
+  }
+
